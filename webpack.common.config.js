@@ -1,23 +1,19 @@
 var path = require('path')
-var webpack = require('webpack')
+// var webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
-    entry: ['babel-polyfill', './src/main.js'],
-    devtool: '#eval-source-map',
-    mode: 'development',
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
         filename: 'build.js'
     },
-    devServer: {
-        historyApiFallback: true,
-        overlay: true
-    },
     resolve: {
         alias: {
-            'vue$': 'vue/dist/vue.esm.js'
+            'vue$': 'vue/dist/vue.esm.js',
+            'assets': path.resolve('src/assets'),
+            '@': path.resolve('src'),
+            '@component': path.resolve('src/components')
         }
     },
     module: {

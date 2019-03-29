@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open --hot --config webpack.config.js",
+    "dev": "webpack-dev-server --open --hot --config webpack.dev.config.js",
     "build": "webpack --progress --hide-modules --config webpack.pro.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "webpack-merge": "^4.2.1"
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
