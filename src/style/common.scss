@@ -1,3 +1,75 @@
 body {
     background: #fed;
 }
+
+$titleColor: rgba(0, 0, 0, 0.85);
+$contentColor: rgba(0, 0, 0, 0.65);
+// @primary: rgba(54, 163, 247,1);
+$danger: rgba(245, 34, 45, 1);
+$inputBorderColor: rgba(217, 217, 217, 1);
+$separateLineColor: rgba(232, 232, 232, 1);
+$placeholderColor: rgba(0, 0, 0, 0.25);
+$primary: hsl(206, 92.3%, 59.0%);
+
+$borderColor: #ebebeb;
+
+.card {
+    margin-bottom: 20px;
+    width: 920px;
+    border: 1px solid $borderColor;
+
+    .content {
+        padding: 20px;
+    }
+
+    .tool {
+        border: 1px solid $borderColor;
+        padding: 10px 20px;
+        font-size: 14px;
+        margin: 0;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .code {
+        padding: 0 20px;
+        display: none;
+    }
+}
+
+/deep/ pre {
+    max-width: 900px;
+    max-height: 700px;
+}
+
+table {
+    border-collapse: collapse;
+
+    margin: 10px;
+    width: 900px;
+
+    text-align: center;
+}
+
+table td,
+table th {
+    border: 1px solid #cad9ea;
+
+    color: #666;
+
+    height: 30px;
+}
+
+table thead th {
+    background-color: #cce8eb;
+
+    width: 100px;
+}
+
+table tr:nth-child(odd) {
+    background: #fff;
+}
+
+table tr:nth-child(even) {
+    background: #f5fafa;
+}
