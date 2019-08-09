@@ -2,7 +2,7 @@
   <a href="javascript:;" class="vuei-grid-item" :style="style">
     <div class="vuei-grid-item-icon">
       <slot name="icon">
-        <img :src="icon" alt>
+        <img :src="icon" alt />
       </slot>
     </div>
     <p class="vuei-grid-item-label">
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "gridItem",
+  name: "tl-grid-item",
   props: ["icon", "label", "link"],
   mounted () {
     //   this.$slots.icon

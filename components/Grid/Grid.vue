@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'grid',
+  name: 'tl-grid',
   props: {
     cols: {
       type: Number
@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     column () {
-      
+
       return this.cols || this.childrenSize
     }
   },
@@ -37,8 +37,8 @@ export default {
 
 <style lang="scss">
 .vuei-grid {
-    // font-size: 0px;
-//   display: flex;
-//   align-items: center;
+  // font-size: 0px;
+  //   display: flex;
+  //   align-items: center;
 }
 </style>
